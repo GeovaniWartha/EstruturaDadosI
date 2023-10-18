@@ -2,8 +2,9 @@
 
 Tree<int> tree = new Tree<int>();
 // inicializa o nó raiz com valor 1000
-tree.Root = new TreeNode<int>();{
-    Data = 1000;
+tree.Root = new TreeNode<int>(){
+    Data = 1000,
+    Parent = tree.Root
 };
 //Troca o valor de data no nó raiz
 tree.Root.Data = 100;
